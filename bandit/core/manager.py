@@ -237,8 +237,6 @@ class BanditManager:
                 if _is_file_included(fname, included_globs,
                                      excluded_path_strings,
                                      enforce_glob=False):
-                    if fname != "-":
-                        fname = os.path.join(".", fname)
                     files_list.add(fname)
                 else:
                     excluded_files.add(fname)
